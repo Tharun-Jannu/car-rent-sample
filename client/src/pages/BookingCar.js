@@ -82,6 +82,7 @@ function BookingCar({ match }) {
           </Divider>
           <div style={{ textAlign: "right" }}>
             <p>{car.name}</p>
+            <p>{car.location}</p>
             <p>{car.rentPerHour} Rent Per hour /-</p>
             <p>Fuel Type : {car.fuelType}</p>
             <p>Max Persons : {car.capacity}</p>

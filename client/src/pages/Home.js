@@ -93,6 +93,7 @@ function Home() {
 
                                     <div className='text-left pl-2'>
                                         <p>{car.name}</p>
+                                        <p>{car.location}</p>
                                         <p> Rent Per Hour {car.rentPerHour} /-</p>
                                     </div>
 

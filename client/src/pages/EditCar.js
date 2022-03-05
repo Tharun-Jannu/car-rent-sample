@@ -49,6 +49,9 @@ function EditCar({ match }) {
               >
                 <Input />
               </Form.Item>
+              <Form.Item name='location' label='Location' rules={[{required: true}]}>
+                               <Input/>
+                           </Form.Item>
               <Form.Item
                 name="image"
                 label="Image url"

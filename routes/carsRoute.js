@@ -11,6 +11,26 @@ router.get("/getallcars", async (req, res) => {
   }
 });
 
+router.get("/searchcar/:name", async (req, res) => {
+  try {
+    const carData = await Car.findOne({name:req.params.name});
+    if(carData)
+    {
+      res.status(200).json({
+        data:carData,
+        message:"Success"
+      })
+    }
+    else{
+      res.status(404).json({
+        message:"no car found"
+      })
+    }
+    res.send(carData);
+  } catch (error) {
+    return res.status(400).json(error);
+  }
+});
 router.post("/addcar", async (req, res) => {
   try {
     const newcar = new Car(req.body);

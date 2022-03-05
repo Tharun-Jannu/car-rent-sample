@@ -13,7 +13,7 @@ const carSchema = new mongoose.Schema({
             to: { type: String, required: true }
         }
     ],
-
+    isActive:{type:Boolean,required:true},
     rentPerHour: { type: Number, required: true }
 
 
