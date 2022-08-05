@@ -46,6 +46,8 @@ function AddCar() {
 
                            <div className='text-right'>
                            <button className='btn1'>ADD CAR</button>
+                           <div>this is latest commit with new branch and test</div>
+                           <div>this is latest commit-newbranch and push code</div>
                            </div>
 
                        </Form>
