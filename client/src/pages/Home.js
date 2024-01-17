@@ -87,7 +87,7 @@ function Home() {
                    {totalCars.map(car=>{
                        return <Col lg={5} sm={24} xs={24}>
                             <div className="car p-2 bs1">
-                                <div>this is second commit and second push</div>
+                                {/* <div>this is second commit and second push</div> */}
                                <img src={car.image} className="carimg"/>
 
                                <div className="car-content d-flex align-items-center justify-content-between">
